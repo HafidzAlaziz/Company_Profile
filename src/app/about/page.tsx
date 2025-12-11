@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 
+import { IMAGES } from "@/lib/images";
+
 export default function AboutPage() {
     return (
         <div className="pt-24 pb-24">
@@ -24,8 +26,8 @@ export default function AboutPage() {
             <section className="container mx-auto px-6 mb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1554048612-387768052bf7?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl w-full h-64 object-cover mt-8" alt="Studio" />
-                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl w-full h-64 object-cover" alt="Working" />
+                        <img src={IMAGES.about.studio} className="rounded-2xl w-full h-64 object-cover mt-8" alt="Studio" />
+                        <img src={IMAGES.about.team} className="rounded-2xl w-full h-64 object-cover" alt="Working" />
                     </div>
                     <div className="space-y-6">
                         <h2 className="text-3xl font-serif font-bold text-primary">Visi & Misi Kami</h2>

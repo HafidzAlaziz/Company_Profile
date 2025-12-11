@@ -5,6 +5,8 @@ import Button from "@/components/ui/Button";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 
+import { IMAGES } from "@/lib/images";
+
 const Hero = () => {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [0, 500], [0, 200]);
@@ -19,7 +21,7 @@ const Hero = () => {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: 'url("https://images.unsplash.com/photo-1519225448526-0a09048a1b00?q=80&w=2070&auto=format&fit=crop")',
+                        backgroundImage: `url("${IMAGES.hero.bg}")`,
                         filter: 'brightness(0.4)'
                     }}
                 />

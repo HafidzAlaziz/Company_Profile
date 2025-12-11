@@ -3,16 +3,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { IMAGES } from "@/lib/images";
+
 const categories = ["All", "Wedding", "Prewedding", "Event", "Portrait"];
 
-const portfolioItems = [
-    { id: 1, category: "Wedding", image: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop", title: "Sarah & Dimas" },
-    { id: 2, category: "Prewedding", image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop", title: "Evening Stroll" },
-    { id: 3, category: "Prewedding", image: "https://images.unsplash.com/photo-1522673607200-1645062cd958?q=80&w=2070&auto=format&fit=crop", title: "Rustic Love" },
-    { id: 4, category: "Event", image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=2070&auto=format&fit=crop", title: "Company Gathering" },
-    { id: 5, category: "Portrait", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop", title: "Studio Session" },
-    { id: 6, category: "Wedding", image: "https://images.unsplash.com/photo-1520854221256-17451cc330e7?q=80&w=2070&auto=format&fit=crop", title: "The Vow" },
-];
+const portfolioItems = IMAGES.portfolio;
 
 const PortfolioGallery = () => {
     const [activeCategory, setActiveCategory] = useState("All");

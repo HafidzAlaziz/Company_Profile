@@ -6,6 +6,8 @@ import Button from "@/components/ui/Button";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
+import { IMAGES } from "@/lib/images";
+
 export default function Home() {
     return (
         <div className="flex flex-col gap-0">
@@ -40,7 +42,7 @@ export default function Home() {
                     <div className="relative h-[500px] rounded-2xl overflow-hidden group">
                         <div
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                            style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop")' }}
+                            style={{ backgroundImage: `url("${IMAGES.about.bg}")` }}
                         />
                     </div>
                 </div>
@@ -58,19 +60,19 @@ export default function Home() {
                             title="Wedding Photography"
                             description="Abadikan momen sakral pernikahan Anda dengan sentuhan estetik dan emosional."
                             priceStart="Rp 3.000.000"
-                            image="https://images.unsplash.com/photo-1511285560982-1356c11d4606?q=80&w=2070&auto=format&fit=crop"
+                            image={IMAGES.services.wedding}
                         />
                         <ServiceCard
                             title="Prewedding Session"
                             description="Konsep unik dan personal untuk menceritakan kisah cinta Anda sebelum hari H."
                             priceStart="Rp 1.500.000"
-                            image="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
+                            image={IMAGES.services.prewedding}
                         />
                         <ServiceCard
                             title="Corporate Event"
                             description="Dokumentasi profesional untuk acara perusahaan, seminar, dan gathering."
                             priceStart="Rp 2.500.000"
-                            image="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?q=80&w=2070&auto=format&fit=crop"
+                            image={IMAGES.services.corporate}
                         />
                     </div>
                     <div className="text-center mt-12">
@@ -113,7 +115,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/80 z-0" />
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay z-0"
-                    style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop")' }}
+                    style={{ backgroundImage: `url("${IMAGES.cta.bg}")` }}
                 />
                 <div className="container relative z-10 mx-auto px-6 text-center">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Siap Mengabadikan Momen Anda?</h2>

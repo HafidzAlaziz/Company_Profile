@@ -9,43 +9,45 @@ export const metadata: Metadata = {
 };
 
 
+import { IMAGES } from "@/lib/images";
+
 export default function ServicesPage() {
     const services = [
         {
             title: "Wedding Photography",
             desc: "Paket lengkap dokumentasi hari bahagia Anda, mulai dari akad/pemberkatan hingga resepsi.",
             price: "Rp 3.500.000",
-            img: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop"
+            img: IMAGES.services.wedding
         },
         {
             title: "Prewedding Session",
             desc: "Sesi foto outdoor atau indoor dengan konsep yang disesuaikan dengan karakter pasangan.",
             price: "Rp 1.500.000",
-            img: "https://images.unsplash.com/photo-1583934555026-6d60ea106206?q=80&w=2070&auto=format&fit=crop"
+            img: IMAGES.services.prewedding
         },
         {
             title: "Cinematic Videography",
             desc: "Film pendek pernikahan Anda dengan color grading cinematic dan editing storytelling.",
             price: "Rp 4.000.000",
-            img: "https://images.unsplash.com/photo-1621253907409-f831349bcd58?q=80&w=1974&auto=format&fit=crop"
+            img: IMAGES.services.cinematic
         },
         {
             title: "Family Portrait",
             desc: "Abadikan kehangatan keluarga di studio kami atau lokasi pilihan Anda.",
             price: "Rp 1.000.000",
-            img: "https://images.unsplash.com/photo-1623945241470-4d576a8b79ad?q=80&w=2070&auto=format&fit=crop"
+            img: IMAGES.services.family
         },
         {
             title: "Corporate & Event",
             desc: "Dokumentasi profesional untuk kebutuhan branding perusahaan dan event kantor.",
             price: "Rp 2.500.000",
-            img: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop"
+            img: IMAGES.services.corporate
         },
         {
             title: "Product Photography",
             desc: "Foto produk katalog atau editorial untuk meningkatkan penjualan bisnis Anda.",
             price: "Rp 500.000/sku",
-            img: "https://images.unsplash.com/photo-1505740420928-5e57ef893c13?q=80&w=1770&auto=format&fit=crop"
+            img: IMAGES.services.product
         },
     ];
 
