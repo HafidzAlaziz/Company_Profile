@@ -19,6 +19,11 @@ export const metadata: Metadata = {
         locale: "id_ID",
         type: "website",
     },
+    icons: {
+        icon: '/images/camera-logo.png',
+        shortcut: '/images/camera-logo.png',
+        apple: '/images/camera-logo.png',
+    },
 };
 
 export const viewport: Viewport = {
